@@ -12,6 +12,10 @@ class ArrayIterator
   
   def next
     @position = @position + 1
+    current
+  end
+  
+  def current
     if @position < @iterator_content_count
       return @iterator_content[@position]
     end
